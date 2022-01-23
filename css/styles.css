@@ -1,0 +1,193 @@
+:root {
+	--hover-color: #ff6c00;
+	--main-font: "Open Sans", sans-serif;
+	--header-font: "Raleway", sans-serif;
+	--header-color: #303030;
+	--white-color: #ffffff;
+	--dark-grey-color: #9da4bd60;
+	--grey-color: #9da4bd;
+	--paragraph-color: #555555;
+}
+
+body {
+	font-family: var(--main-font);
+	color: var(--white-color);
+	background-color: rgb(128, 128, 128);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* HEADER */
+
+.navigation-list-item-link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.333;
+	letter-spacing: 0.1em;
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
+	color: var(--hover-color);
+}
+
+.phone-number,
+.prime-btn {
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.333;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+/* HERO */
+
+.socials-list-item-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	letter-spacing: 0.2em;
+	color: var(--header-color);
+}
+
+.socials-list-item-link:hover,
+.socials-list-item-link:focus {
+	color: var(--hover-color);
+}
+
+.above {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--dark-grey-color);
+}
+
+.main-header {
+	font-family: var(--header-font);
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.181;
+	letter-spacing: 0.05em;
+}
+
+.under {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.667;
+	letter-spacing: 0.02em;
+	color: var(--grey-color);
+}
+
+/* ABOUT US */
+
+.black {
+	color: var(--header-color);
+}
+
+.second-header {
+	font-family: var(--header-font);
+
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.167;
+	letter-spacing: 0.05em;
+	color: var(--header-color);
+}
+
+.dark {
+	color: var(--paragraph-color);
+}
+
+.about-us-info {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.857;
+	letter-spacing: 0.02em;
+	color: var(--paragraph-color);
+}
+
+/* SERVICES */
+
+.white {
+	color: var(--white-color);
+}
+
+.service,
+.price {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.667;
+	letter-spacing: 0.02em;
+	color: var(--grey-color);
+}
+
+/* WHY US */
+
+.why-us-number {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.357;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: var(--header-color);
+}
+
+.why-us-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	text-align: center;
+	color: var(--header-color);
+}
+
+/* OUR BARBERS */
+
+.barber-name {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.389;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--header-color);
+}
+
+.occupation {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.357;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--hover-color);
+}
+
+/* CONTACT US  */
+
+.contact-list-link,
+.time {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.667;
+	letter-spacing: 0.02em;
+	color: var(--grey-color);
+}
+
+.underline {
+	text-decoration-line: underline;
+}
+
+/* FOOTER  */
+
+.rights {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.367;
+	letter-spacing: 0.2em;
+	color: var(--grey-color);
+}
