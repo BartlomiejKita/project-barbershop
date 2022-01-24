@@ -20,8 +20,76 @@ a {
 	color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+.list {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.section {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
 /* HEADER */
 
+.header .container {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	align-items: "center";
+}
+
+.navigation {
+	display: flex;
+}
+
+.navigation-list {
+	display: flex;
+	align-items: center;
+}
+
+.logo-link {
+	margin-right: 70px;
+}
+
+.navigation-list-item:not(:last-child) {
+	margin-right: 41px;
+}
+
+.phone-number {
+	margin-left: auto;
+	margin-right: 37px;
+}
 .navigation-list-item-link {
 	font-weight: 600;
 	font-size: 12px;
@@ -30,7 +98,9 @@ a {
 }
 
 .navigation-list-item-link:hover,
-.navigation-list-item-link:focus {
+.navigation-list-item-link:focus,
+.phone-number:hover,
+.phone-number:focus {
 	color: var(--hover-color);
 }
 
@@ -43,10 +113,18 @@ a {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: inherit;
+	padding: 12px;
+	display: block;
 }
 
 /* HERO */
+.socials-list {
+	display: flex;
+}
 
+.socials-list-item:not(:last-child) {
+	margin-right: 40px;
+}
 .socials-list-item-link {
 	font-weight: 600;
 	font-size: 11px;
@@ -67,6 +145,7 @@ a {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--dark-grey-color);
+	margin-bottom: 20px;
 }
 
 .main-header {
@@ -75,6 +154,7 @@ a {
 	font-size: 72px;
 	line-height: 1.181;
 	letter-spacing: 0.05em;
+	margin-bottom: 20px;
 }
 
 .under {
@@ -85,8 +165,45 @@ a {
 	color: var(--grey-color);
 }
 
+.hero .under {
+	width: 367px;
+}
+
+.left-side-hero {
+	width: 100px;
+}
+.right-side-hero {
+	padding-right: 485px;
+	padding-left: 100px;
+	padding-top: 272px;
+	padding-bottom: 206px;
+}
 /* ABOUT US */
 
+.about-us .container {
+	display: flex;
+}
+
+.barber-shaving-list {
+	display: flex;
+}
+
+.barber-shaving-list-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.right-side-about-us {
+	margin-left: 65px;
+	width: 500px;
+}
+
+.right-side-about-us .under {
+	margin-bottom: 20px;
+}
+
+.about-us-info {
+	margin-bottom: 40px;
+}
 .black {
 	color: var(--header-color);
 }
@@ -99,6 +216,7 @@ a {
 	line-height: 1.167;
 	letter-spacing: 0.05em;
 	color: var(--header-color);
+	margin-bottom: 20px;
 }
 
 .dark {
@@ -115,6 +233,26 @@ a {
 
 /* SERVICES */
 
+.services .second-header {
+	margin-bottom: 44px;
+}
+
+.services-wrapper {
+	display: flex;
+	margin-bottom: 46px;
+}
+
+.prices-list {
+	width: 50%;
+	padding: 30px 40px;
+}
+
+.services .prime-btn {
+	margin: 0 auto;
+}
+.prices-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
 .white {
 	color: var(--white-color);
 }
@@ -129,6 +267,39 @@ a {
 }
 
 /* WHY US */
+
+.why-us .container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.left-side-why-us {
+	width: 470px;
+	padding-left: 100px;
+	flex-shrink: 0;
+}
+
+.right-side-why-us {
+	margin-left: 130px;
+	width: 500px;
+}
+.why-us-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.why-us-list-item {
+	padding: 20px 24px;
+	width: 170px;
+	min-height: 133px;
+	border: black solid 1px;
+}
+
+.why-us-list-item:nth-child(even) {
+	margin-top: 30px;
+	margin-left: 30px;
+}
 
 .why-us-number {
 	font-weight: 700;
@@ -149,6 +320,26 @@ a {
 
 /* OUR BARBERS */
 
+.our-barbers .second-header {
+	margin-bottom: 44px;
+}
+
+.barbers-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.barber-photo {
+	margin-bottom: 30px;
+}
+
+.barber-name {
+	margin-bottom: 8px;
+}
+
+.occupation {
+	margin-bottom: 30px;
+}
 .barber-name {
 	font-weight: 400;
 	font-size: 18px;
@@ -167,8 +358,37 @@ a {
 	color: var(--hover-color);
 }
 
+/* PORTFOLIO */
+
+.portfolio .above {
+	margin-bottom: 44px;
+}
+
+.portfolio-list {
+	display: flex;
+	justify-content: space-between;
+}
 /* CONTACT US  */
 
+.contact-us .container {
+	display: flex;
+}
+
+.contact-us .second-header {
+	margin-bottom: 40px;
+}
+
+.contact-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.contact {
+	margin-bottom: 70px;
+}
+
+.contact-list-item:first-child {
+	width: 207px;
+}
 .contact-list-link,
 .time {
 	font-weight: 400;
@@ -184,6 +404,15 @@ a {
 
 /* FOOTER  */
 
+.footer {
+	padding-top: 56px;
+	padding-bottom: 56px;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+}
 .rights {
 	font-weight: 600;
 	font-size: 11px;
