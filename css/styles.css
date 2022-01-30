@@ -490,6 +490,7 @@ img {
 .socials-list-icons-link:hover,
 .socials-list-icons-link:focus {
 	fill: var(--hover-color);
+	background-color: var(--header-color);
 }
 
 .social-icon {
