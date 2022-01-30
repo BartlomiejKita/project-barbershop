@@ -104,7 +104,13 @@ img {
 	color: var(--hover-color);
 }
 
-.phone-number,
+.phone-number {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.333;
+	letter-spacing: 0.1em;
+}
+
 .prime-btn {
 	font-family: inherit;
 	font-weight: 600;
@@ -115,6 +121,15 @@ img {
 	color: inherit;
 	padding: 12px;
 	display: block;
+	border-radius: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid var(--hover-color);
+}
+
+.prime-btn:hover,
+.prime-btn:focus {
+	background-color: var(--hover-color);
 }
 
 /* HERO */
@@ -206,6 +221,11 @@ img {
 }
 .black {
 	color: var(--header-color);
+}
+
+.black:hover,
+.black:focus {
+	color: var(--white-color);
 }
 
 .second-header {
