@@ -339,6 +339,22 @@ img {
 	padding: 30px 40px;
 }
 
+.prices-list:nth-child(odd) {
+	background-image: linear-gradient(
+		180deg,
+		#171a24 0%,
+		rgba(23, 26, 36, 0.2) 100%
+	);
+}
+
+.prices-list:nth-child(even) {
+	background-image: linear-gradient(
+		180deg,
+		#090b13 0%,
+		rgba(9, 11, 19, 0.2) 100%
+	);
+}
+
 .services .prime-btn {
 	margin: 0 auto;
 }
@@ -412,6 +428,10 @@ img {
 
 /* OUR BARBERS */
 
+.our-barbers {
+	background-color: #f7f7f7;
+}
+
 .our-barbers .second-header {
 	margin-bottom: 44px;
 }
@@ -448,6 +468,33 @@ img {
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: var(--hover-color);
+}
+
+.socials-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials-list-icons-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: var(--white-color);
+	margin-right: 10px;
+}
+
+.socials-list-icons-link:hover,
+.socials-list-icons-link:focus {
+	fill: var(--hover-color);
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
 }
 
 /* PORTFOLIO */
