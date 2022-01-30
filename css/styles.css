@@ -228,7 +228,7 @@ img {
 			rgba(25, 28, 38, 0.2),
 			rgba(25, 28, 38, 0.2)
 		),
-		url(/images/index/herobg.jpg);
+		url(../images/index/herobg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-right: 485px;
@@ -319,7 +319,7 @@ img {
 /* SERVICES */
 
 .services {
-	background-image: url(/images/index/servicesbg.png);
+	background-image: url(../images/index/servicesbg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #111319;
