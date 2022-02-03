@@ -59,6 +59,7 @@ img {
 	padding-top: 130px;
 	padding-bottom: 130px;
 }
+
 /* HEADER */
 
 .header {
@@ -144,14 +145,68 @@ img {
 	background-color: var(--hover-color);
 }
 
+.backdrop {
+	position: fixed;
+	display: flex;
+	background: rgba(0, 0, 0, 0.2);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out,
+		visibility 1000ms ease-in-out;
+}
+
+.modal {
+	width: 528px;
+	min-height: 581px;
+	background: var(--white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	margin: auto;
+	position: relative;
+}
+
+.close-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: var(--white-color);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.close-btn-icon {
+	width: 18px;
+	height: 18px;
+}
+
+.is-hidden {
+	visibility: 0;
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(10%);
+}
+
 /* HERO */
 
 .hero .container {
 	display: flex;
 }
 
-.socials-list {
+.hero .socials-list {
 	display: flex;
+	transform: rotate(-90deg);
+	justify-content: flex-end;
+	padding-bottom: 40px;
+	padding-right: 82px;
 }
 
 .socials-list-item:first-child {
@@ -362,6 +417,19 @@ img {
 	);
 }
 
+.prices-list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.line {
+	display: block;
+	background: rgba(157, 164, 189, 0.12);
+	height: 1px;
+	flex-grow: 1;
+}
+
 .services .prime-btn {
 	margin: 0 auto;
 }
@@ -379,6 +447,7 @@ img {
 	line-height: 1.667;
 	letter-spacing: 0.02em;
 	color: var(--grey-color);
+	padding: 0 15px;
 }
 
 /* WHY US */
@@ -409,6 +478,7 @@ img {
 	width: 170px;
 	min-height: 133px;
 	border: black solid 1px;
+	background-color: #f7f7f7;
 }
 
 .why-us-list-item:nth-child(even) {
@@ -423,6 +493,19 @@ img {
 	text-align: center;
 	letter-spacing: 0.05em;
 	color: var(--header-color);
+	position: relative;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.why-us-number::after {
+	content: "";
+	background-image: url(../images/plus-icon.svg);
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	right: -10px;
+	top: 15px;
 }
 
 .why-us-text {
