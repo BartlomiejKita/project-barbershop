@@ -49,7 +49,7 @@ img {
 }
 
 .container {
-	width: 1200px;
+	width: 1280px;
 	padding: 0 15px;
 	margin: 0 auto;
 	align-items: center;
@@ -136,8 +136,11 @@ img {
 	cursor: pointer;
 	background-color: transparent;
 	border: 1px solid var(--hover-color);
-	margin-right: 15px;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .prime-btn {
+	margin-right: 15px;
 }
 
 .prime-btn:hover,
@@ -168,6 +171,7 @@ img {
 	border-radius: 4px;
 	margin: auto;
 	position: relative;
+	padding: 40px 40px 0;
 }
 
 .close-btn {
@@ -195,6 +199,141 @@ img {
 	opacity: 0;
 	pointer-events: none;
 	transform: scale(10%);
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-header {
+	font-weight: 700px;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--header-color);
+	margin-bottom: 12px;
+}
+
+.form-label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.167;
+	letter-spacing: 0.01em;
+	color: var(--paragraph-color);
+	margin-bottom: 4px;
+}
+
+.form-input {
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	height: 40px;
+	padding-left: 42px;
+	width: 100%;
+	margin-bottom: 10px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+	outline: none;
+	border-color: var(--hover-color);
+}
+
+.form-input:focus + .input-icon {
+	fill: var(--hover-color);
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.input-icon {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 12px;
+	top: 11px;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea {
+	width: 100%;
+	height: 120px;
+	padding: 12px 16px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	margin-bottom: 20px;
+	resize: none;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:focus {
+	outline: none;
+	border-color: var(--hover-color);
+}
+
+.form-checkbox {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: var(--paragraph-color);
+	margin-bottom: 30px;
+}
+
+.modal-link {
+	text-decoration-line: underline;
+	text-decoration-skip-ink: none;
+	color: var(--hover-color);
+}
+
+.modal .prime-btn {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.form-checkbox:before {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	display: inline-block;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border: 2px solid var(--header-color);
+	border-radius: 1px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-checkbox:checked + .form-checkbox:before {
+	background-color: var(--hover-color);
+	border: none;
+	background-image: url(../images/submit-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.checkbox-wrapper {
+	position: relative;
+	display: flex;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	top: 18px;
+	left: 8px;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 /* HERO */
@@ -387,10 +526,18 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #111319;
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.services .above-light {
+	margin-left: 55px;
 }
 
 .services .second-header {
 	margin-bottom: 44px;
+	margin-left: 55px;
 }
 
 .services-wrapper {
@@ -409,6 +556,7 @@ img {
 		#171a24 0%,
 		rgba(23, 26, 36, 0.2) 100%
 	);
+	margin-left: 55px;
 }
 
 .prices-list:nth-child(even) {
@@ -417,6 +565,7 @@ img {
 		#090b13 0%,
 		rgba(9, 11, 19, 0.2) 100%
 	);
+	margin-right: 55px;
 }
 
 .prices-list-item {
@@ -522,15 +671,24 @@ img {
 
 .our-barbers {
 	background-color: #f7f7f7;
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.our-barbers .above-dark {
+	margin-left: 55px;
 }
 
 .our-barbers .second-header {
 	margin-bottom: 44px;
+	margin-left: 55px;
 }
 
 .barbers-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	margin: 0 55px;
 }
 
 .barber-photo {
@@ -597,14 +755,27 @@ img {
 	margin-bottom: 44px;
 }
 
+.portfolio .above-dark {
+	margin-left: 55px;
+}
+
 .portfolio-list {
 	display: flex;
 	justify-content: space-between;
+	margin: 0 55px;
 }
 /* CONTACT US  */
 
 .contact-us .container {
 	display: flex;
+}
+
+.left-side-contact-us {
+	background: #191c26;
+}
+
+.right-side-contact-us {
+	background-image: url(../images/index/contactusbg.png);
 }
 
 .contact-us .second-header {
