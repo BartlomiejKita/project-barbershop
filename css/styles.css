@@ -145,6 +145,8 @@ img {
 	background-color: var(--hover-color);
 }
 
+/* MODAL */
+
 .backdrop {
 	position: fixed;
 	display: flex;
