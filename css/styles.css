@@ -823,4 +823,9 @@ img {
 	line-height: 1.367;
 	letter-spacing: 0.2em;
 	color: var(--grey-color);
+	margin-left: 55px;
+}
+
+.footer .socials-list {
+	margin-right: 55px;
 }
