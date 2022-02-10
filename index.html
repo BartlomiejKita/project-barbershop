@@ -381,10 +381,39 @@
 			</section>
 
 			<!-- CONTACT US -->
-			<section class="contact-us section">
+			<section class="contact-us">
 				<div class="container">
 					<div class="left-side-contact-us">
-						<p class="second-header white">Rezerwacja online</p>
+						<h2 class="second-header white">Rezerwacja Online</h2>
+
+						<form
+							action="#"
+							class="form-contact-us"
+							name="contact-form"
+							autocomplete="on"
+						>
+							<input
+								type="text"
+								name="user-name"
+								class="input-contact"
+								required
+								placeholder="IMIE*"
+							/>
+							<input
+								type="tel"
+								name="user-phone"
+								class="input-contact"
+								required
+								placeholder="TELEFON"
+							/>
+
+							<textarea
+								name="textarea-text"
+								class="textarea-contact"
+								placeholder="WIADOMOŚĆ"
+							></textarea>
+							<button class="prime-btn" type="submit">WYSŁAĆ</button>
+						</form>
 					</div>
 
 					<div class="right-side-contact-us">
@@ -396,27 +425,35 @@
 										href="https://goo.gl/maps/9V8N2yqphjDbtE588"
 										target="_blank"
 										class="contact-list-link"
-										>ul. Prosta 20 Warszawa, 00-001</a
+									>
+										<svg class="contact-icon map-top">
+											<use href="images/icons.svg#map-pin"></use>
+										</svg>
+										ul. Prosta 20 Warszawa, 00-001</a
 									>
 								</li>
 								<li class="contact-list-item">
 									<a href="tel:+48111111111" class="contact-list-link"
-										>+48 111 111 111</a
+										><svg class="contact-icon">
+											<use href="images/icons.svg#phone"></use>
+										</svg>
+										+48 111 111 111</a
 									>
 								</li>
 								<li class="contact-list-item">
 									<a
 										href="mailto:barbershop@email.com"
 										class="contact-list-link underline"
-										>barbershop@email.com</a
+										><svg class="contact-icon">
+											<use href="images/icons.svg#mail"></use>
+										</svg>
+										barbershop@email.com</a
 									>
 								</li>
 							</ul>
 						</address>
-						<p class="above white">Godziny otwarcia</p>
-						<p class="time">
-							Codziennie od <time>9:00</time> do <time>22:00</time>
-						</p>
+						<p class="above white above-light">Godziny otwarcia</p>
+						<p class="time">Codziennie od 9:00 do 22:00</p>
 					</div>
 				</div>
 			</section>
@@ -440,7 +477,7 @@
 			<div class="modal">
 				<button type="button" class="close-btn" data-modal-close>
 					<svg class="close-btn-icon">
-						<use href="images/icons.svg#close-icon"
+						<use href="images/icons.svg#close-icon"></use>
 					</svg>
 				</button>
 				<h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
@@ -514,7 +551,7 @@
 						>
 					</div>
 
-					<button class="prime-btn black" type="submit">Wyślij</button>
+					<button class="prime-btn black" type="submit">WYŚLIJ</button>
 				</form>
 			</div>
 		</div>
