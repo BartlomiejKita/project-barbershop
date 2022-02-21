@@ -1,0 +1,25 @@
+.main-header {
+	font-family: var(--header-font);
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.181;
+	letter-spacing: 0.05em;
+	margin-bottom: 20px;
+}
+
+.left-side-hero {
+	width: 100px;
+}
+.right-side-hero {
+	background-image: linear-gradient(
+			rgba(25, 28, 38, 0.2),
+			rgba(25, 28, 38, 0.2)
+		),
+		url(../images/index/herobg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-grow: 1;
+	padding-left: 100px;
+	padding-top: 272px;
+	padding-bottom: 206px;
+}

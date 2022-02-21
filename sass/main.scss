@@ -1,0 +1,31 @@
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/close-btn";
+@import "./components/logo";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/primary-btn";
+@import "./components/social-list";
+@import "./components/social-icons";
+@import "./components/above-header";
+@import "./components/second-header";
+@import "./components/under-header";
+
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about-us";
+@import "./layout/services";
+@import "./layout/why-us";
+@import "./layout/our-barbers";
+@import "./layout/portfolio";
+@import "./layout/contact-us";
+@import "./layout/footer";
+
+

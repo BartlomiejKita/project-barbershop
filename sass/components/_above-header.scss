@@ -1,0 +1,57 @@
+.above-light {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--dark-grey-color);
+	margin-bottom: 20px;
+}
+
+.above-light::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	display: block;
+	background-color: var(--dark-grey-color);
+	margin-right: 20px;
+}
+
+.our-barbers .above-dark {
+	margin-left: 55px;
+}
+
+.portfolio .above {
+	margin-bottom: 44px;
+}
+
+.portfolio .above-dark {
+	margin-left: 55px;
+}
+
+.services .above-light {
+	margin-left: 55px;
+}
+
+.above-dark {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--header-color);
+	margin-bottom: 20px;
+}
+
+.above-dark::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	display: block;
+	background-color: var(--header-color);
+	margin-right: 20px;
+}

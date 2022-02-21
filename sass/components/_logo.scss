@@ -1,0 +1,13 @@
+.logo-link {
+	margin-right: 70px;
+}
+
+.logo {
+	width: 69px;
+	height: 56px;
+}
+
+.logo-link:hover {
+	animation-name: animate__heartBeat;
+	animation-duration: 1000ms;
+}

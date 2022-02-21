@@ -1,0 +1,72 @@
+.services {
+	background-image: url(../images/index/servicesbg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #111319;
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+.services-wrapper {
+	display: flex;
+	margin-bottom: 46px;
+}
+
+.prices-list {
+	width: 50%;
+	padding: 30px 40px;
+}
+
+.prices-list:nth-child(odd) {
+	background-image: linear-gradient(
+		180deg,
+		#171a24 0%,
+		rgba(23, 26, 36, 0.2) 100%
+	);
+	margin-left: 55px;
+}
+
+.prices-list:nth-child(even) {
+	background-image: linear-gradient(
+		180deg,
+		#090b13 0%,
+		rgba(9, 11, 19, 0.2) 100%
+	);
+	margin-right: 55px;
+}
+
+.prices-list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.line {
+	display: block;
+	background: rgba(157, 164, 189, 0.12);
+	height: 1px;
+	flex-grow: 1;
+}
+
+
+.prices-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.white {
+	color: var(--white-color);
+}
+
+.service,
+.price {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.667;
+	letter-spacing: 0.02em;
+	color: var(--grey-color);
+	padding: 0 15px;
+}

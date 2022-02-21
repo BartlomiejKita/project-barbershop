@@ -1,0 +1,35 @@
+.prime-btn {
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.333;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: inherit;
+	padding: 12px;
+	display: block;
+	border-radius: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid var(--hover-color);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prime-btn:hover,
+.prime-btn:focus {
+	background-color: var(--hover-color);
+}
+
+.header .prime-btn {
+	margin-right: 15px;
+}
+
+.services .prime-btn {
+	margin: 0 auto;
+}
+
+.contact-us .prime-btn {
+	width: 200px;
+	margin-right: auto;
+	margin-bottom: 193px;
+}

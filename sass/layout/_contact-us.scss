@@ -1,0 +1,133 @@
+
+.left-side-contact-us {
+	width: 50%;
+	margin-left: 55px;
+	margin-right: 25px;
+}
+
+
+
+.form-contact-us {
+	width: 560px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.input-contact {
+	border: none;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	background-color: transparent;
+	color: var(--white-color);
+	height: 24px;
+	width: 260px;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.367;
+	margin-bottom: 44px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-contact:nth-child(1) {
+	margin-right: 40px;
+}
+
+.textarea-contact {
+	width: 100%;
+	height: 76px;
+	border: none;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	background-color: transparent;
+	color: var(--white-color);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.367;
+	margin-bottom: 44px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	resize: none;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-contact::placeholder,
+.textarea-contact::placeholder {
+	color: rgba(157, 164, 189, 0.4);
+}
+
+.input-contact:focus,
+.textarea-contact:focus {
+	outline: none;
+	border-color: var(--white-color);
+}
+
+.input-contact:focus::placeholder,
+.textarea-contact:focus::placeholder {
+	color: var(--white-color);
+}
+
+.textarea-label {
+	color: rgba(157, 164, 189, 0.4);
+}
+
+.right-side-contact-us {
+	width: 50%;
+	background-image: url(../images/index/contactusbg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 115px;
+	padding-top: 130px;
+}
+
+
+.contact-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.contact-list {
+	margin-left: 40px;
+}
+
+.contact {
+	margin-bottom: 70px;
+}
+
+.contact-list-item:first-child {
+	width: 167px;
+}
+
+.contact-list-link,
+.time {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.667;
+	letter-spacing: 0.02em;
+	color: var(--grey-color);
+}
+
+.time {
+	margin-top: 20px;
+	padding-bottom: 130px;
+}
+
+.underline {
+	text-decoration-line: underline;
+}
+
+.contact-icon {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+	position: absolute;
+	left: -40px;
+}
+
+.contact-list-link {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.map-top {
+	top: 0;
+}

@@ -1,0 +1,42 @@
+.our-barbers {
+	background-color: #f7f7f7;
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.barbers-list {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 55px;
+}
+
+.barber-photo {
+	margin-bottom: 30px;
+}
+
+.barber-name {
+	margin-bottom: 8px;
+}
+
+.occupation {
+	margin-bottom: 30px;
+}
+.barber-name {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.389;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--header-color);
+}
+
+.occupation {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.357;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--hover-color);
+}
+

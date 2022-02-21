@@ -1,0 +1,38 @@
+.container {
+	width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+	align-items: center;
+
+	.header & {
+		display: flex;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		align-items: center;
+	}
+
+	.hero & {
+		display: flex;
+	}
+}
+
+.why-us .container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.about-us .container {
+	display: flex;
+}
+
+.contact-us .container {
+	display: flex;
+	background: #191c26;
+	padding-right: 0;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+

@@ -1,0 +1,44 @@
+.barber-shaving-list {
+	display: flex;
+}
+
+.barber-shaving-list-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.right-side-about-us {
+	margin-left: 65px;
+	width: 500px;
+}
+
+.right-side-about-us .under {
+	margin-bottom: 20px;
+}
+
+.about-us-info {
+	margin-bottom: 40px;
+}
+
+
+.black {
+	color: var(--header-color);
+}
+
+.black:hover,
+.black:focus {
+	color: var(--white-color);
+}
+
+
+
+.dark {
+	color: var(--paragraph-color);
+}
+
+.about-us-info {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.857;
+	letter-spacing: 0.02em;
+	color: var(--paragraph-color);
+}
