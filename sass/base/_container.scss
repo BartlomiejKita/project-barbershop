@@ -14,25 +14,24 @@
 	.hero & {
 		display: flex;
 	}
-}
 
-.why-us .container {
-	display: flex;
-	align-items: flex-start;
-}
+	.why-us & {
+		display: flex;
+		align-items: flex-start;
+	}
 
-.about-us .container {
-	display: flex;
-}
+	.about-us & {
+		display: flex;
+	}
 
-.contact-us .container {
-	display: flex;
-	background: #191c26;
-	padding-right: 0;
-}
+	.contact-us & {
+		display: flex;
+		background: #191c26;
+		padding-right: 0;
+	}
 
-.footer .container {
-	display: flex;
-	justify-content: space-between;
+	.footer & {
+		display: flex;
+		justify-content: space-between;
+	}
 }
-

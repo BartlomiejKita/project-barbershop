@@ -1,13 +1,3 @@
-.our-barbers .second-header {
-	margin-bottom: 44px;
-	margin-left: 55px;
-}
-
-.services .second-header {
-	margin-bottom: 44px;
-	margin-left: 55px;
-}
-
 .second-header {
 	font-family: var(--header-font);
 
@@ -17,13 +7,27 @@
 	letter-spacing: 0.05em;
 	color: var(--header-color);
 	margin-bottom: 20px;
-}
 
-.left-side-contact-us .second-header {
-	margin-top: 130px;
-	margin-bottom: 44px;
-}
+	.our-barbers & {
+		margin-bottom: 44px;
+		margin-left: 55px;
+	}
 
-.right-side-contact-us .second-header {
-	margin-bottom: 40px;
+	.services & {
+		margin-bottom: 44px;
+		margin-left: 55px;
+	}
+
+	.contact-us__left-side & {
+		margin-top: 130px;
+		margin-bottom: 44px;
+	}
+
+	.contact-us__right-side & {
+		margin-bottom: 40px;
+	}
+
+	&--white-theme {
+		color: var(--white-color);
+	}
 }

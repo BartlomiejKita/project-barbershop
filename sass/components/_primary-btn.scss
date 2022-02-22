@@ -13,23 +13,37 @@
 	background-color: transparent;
 	border: 1px solid var(--hover-color);
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.prime-btn:hover,
-.prime-btn:focus {
-	background-color: var(--hover-color);
-}
+	&:hover,
+	&:focus {
+		background-color: var(--hover-color);
+	}
 
-.header .prime-btn {
-	margin-right: 15px;
-}
+	&--black-theme {
+		color: var(--header-color);
 
-.services .prime-btn {
-	margin: 0 auto;
-}
+		&:hover,
+		&:focus {
+			color: var(--white-color);
+		}
+	}
 
-.contact-us .prime-btn {
-	width: 200px;
-	margin-right: auto;
-	margin-bottom: 193px;
+	.header & {
+		margin-right: 15px;
+	}
+
+	.modal & {
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	.services & {
+		margin: 0 auto;
+	}
+
+	.contact-us & {
+		width: 200px;
+		margin-right: auto;
+		margin-bottom: 193px;
+	}
 }
