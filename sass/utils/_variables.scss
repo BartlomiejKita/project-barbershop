@@ -1,11 +1,8 @@
-:root {
-	--hover-color: #ff6c00;
-	--main-font: "Open Sans", sans-serif;
-	--header-font: "Raleway", sans-serif;
-	--header-color: #303030;
-	--white-color: #ffffff;
-	--dark-grey-color: #9da4bd60;
-	--grey-color: #9da4bd;
-	--paragraph-color: #555555;
-}
-
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+$primary-dark-color: #303030;
+$primary-light-color: #ffffff;
+$primary-grey-color: #9da4bd60;
+$secondary-grey-color: #9da4bd;
+$tertiary-grey-color: #555555;
+$accent-color: #ff6c00;

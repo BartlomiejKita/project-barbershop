@@ -1,7 +1,7 @@
 .modal {
 	width: 528px;
 	min-height: 581px;
-	background: var(--white-color);
+	background: $primary-light-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -20,7 +20,7 @@
 		line-height: 1.15;
 		text-align: center;
 		letter-spacing: 0.03em;
-		color: var(--header-color);
+		color: $primary-dark-color;
 		margin-bottom: 12px;
 	}
 
@@ -29,14 +29,14 @@
 		font-size: 12px;
 		line-height: 1.167;
 		letter-spacing: 0.01em;
-		color: var(--paragraph-color);
+		color: $tertiary-grey-color;
 		margin-bottom: 4px;
 	}
 
 	&__link {
 		text-decoration-line: underline;
 		text-decoration-skip-ink: none;
-		color: var(--hover-color);
+		color: $accent-color;
 	}
 
 	&__icon {
@@ -60,11 +60,11 @@
 
 	&:focus {
 		outline: none;
-		border-color: var(--hover-color);
+		border-color: $accent-color;
 	}
 
 	&:focus + .modal__icon {
-		fill: var(--hover-color);
+		fill: $accent-color;
 	}
 }
 
@@ -80,7 +80,7 @@
 
 	&:focus {
 		outline: none;
-		border-color: var(--hover-color);
+		border-color: $accent-color;
 	}
 }
 
@@ -92,7 +92,7 @@
 	font-size: 14px;
 	line-height: 1.714;
 	letter-spacing: 0.03em;
-	color: var(--paragraph-color);
+	color: $tertiary-grey-color;
 	margin-bottom: 30px;
 
 	&:before {
@@ -103,7 +103,7 @@
 		content: "";
 		width: 16px;
 		height: 16px;
-		border: 2px solid var(--header-color);
+		border: 2px solid $primary-dark-color;
 		border-radius: 1px;
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 			border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,7 +111,7 @@
 }
 
 .modal__box:checked + .modal__checkbox:before {
-	background-color: var(--hover-color);
+	background-color: $accent-color;
 	border: none;
 	background-image: url(../images/submit-icon.svg);
 	background-repeat: no-repeat;

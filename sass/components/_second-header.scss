@@ -1,11 +1,11 @@
 .second-header {
-	font-family: var(--header-font);
+	font-family: $secondary-font;
 
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.167;
 	letter-spacing: 0.05em;
-	color: var(--header-color);
+	color: $primary-dark-color;
 	margin-bottom: 20px;
 
 	.our-barbers & {
@@ -28,6 +28,6 @@
 	}
 
 	&--white-theme {
-		color: var(--white-color);
+		color: $primary-light-color;
 	}
 }

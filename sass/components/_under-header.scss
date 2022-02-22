@@ -1,20 +1,19 @@
-
 .under {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.667;
 	letter-spacing: 0.02em;
-	color: var(--grey-color);
-}
+	color: $secondary-grey-color;
 
-.hero .under {
-	width: 367px;
-}
+	.hero & {
+		width: 367px;
+	}
 
-.about-us__right-side .under {
-	margin-bottom: 20px;
-}
+	.about-us__right-side & {
+		margin-bottom: 20px;
+	}
 
-.under--dark-theme {
-	color: var(--paragraph-color);
+	&--dark-theme {
+		color: $tertiary-grey-color;
+	}
 }

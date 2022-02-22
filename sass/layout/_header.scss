@@ -6,15 +6,15 @@
 
 .navigation {
 	display: flex;
-}
 
-.navigation__list {
-	display: flex;
-	align-items: center;
-}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
 
-.navigation__item:not(:last-child) {
-	margin-right: 41px;
+	&__item:not(:last-child) {
+		margin-right: 41px;
+	}
 }
 
 .phone-number {
@@ -34,8 +34,5 @@
 .navigation__link:focus,
 .phone-number:hover,
 .phone-number:focus {
-	color: var(--hover-color);
+	color: $accent-color;
 }
-
-
-

@@ -20,7 +20,7 @@
 		font-size: 11px;
 		line-height: 1.364;
 		text-align: center;
-		color: var(--header-color);
+		color: $primary-dark-color;
 	}
 }
 
@@ -43,7 +43,7 @@
 	line-height: 1.357;
 	text-align: center;
 	letter-spacing: 0.05em;
-	color: var(--header-color);
+	color: $primary-dark-color;
 	position: relative;
 	width: max-content;
 	margin: 0 auto;

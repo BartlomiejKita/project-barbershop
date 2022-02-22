@@ -6,7 +6,7 @@
 	line-height: 1.364;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: var(--dark-grey-color);
+	color: $primary-grey-color;
 	margin-bottom: 20px;
 
 	&::before {
@@ -14,7 +14,7 @@
 		width: 60px;
 		height: 1px;
 		display: block;
-		background-color: var(--dark-grey-color);
+		background-color: $primary-grey-color;
 		margin-right: 20px;
 	}
 
@@ -32,7 +32,7 @@
 	line-height: 1.364;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: var(--header-color);
+	color: $primary-dark-color;
 	margin-bottom: 20px;
 
 	&::before {
@@ -40,7 +40,7 @@
 		width: 60px;
 		height: 1px;
 		display: block;
-		background-color: var(--header-color);
+		background-color: $primary-dark-color;
 		margin-right: 20px;
 	}
 
@@ -61,7 +61,7 @@
 	line-height: 1.364;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: var(--white-color);
+	color: $primary-light-color;
 	margin-bottom: 20px;
 
 	&::before {
@@ -69,7 +69,7 @@
 		width: 60px;
 		height: 1px;
 		display: block;
-		background-color: var(--white-color);
+		background-color: $primary-light-color;
 		margin-right: 20px;
 	
 	}
